@@ -1,0 +1,58 @@
+.container {
+	text-align: center;
+}
+
+#connect-button {
+	float: right;
+}
+
+.img-kitty {
+	width: 255px;
+}
+
+.gestating {
+	color: red;
+	display: none;
+}
+
+#kight-modal {
+	text-align: center;
+}
+
+#kight-modal .fight-round-number, #kight-modal .fight-round-result {
+	font-size: 140px;
+}
+
+#kight-modal .fight-round-number {
+	font-weight: bold;
+}
+
+#kight-modal .close {
+	display: none;
+}
+
+#fighters {
+	text-align: center;
+}
+
+#show-event {
+	position: absolute;
+	top: 37px;
+	right: -410px;
+	width: 400px;
+	height: 92px;
+	border-radius: 10px 10px 10px 10px;
+	position: fixed;
+	color: #04ce04;
+	padding-right: 10px;
+	background: #ffffff;
+	text-align: center;
+	overflow: hidden;
+	border: 1px solid;
+	margin:0 auto;
+}
+
+#showmessage-text {
+	float: left;
+	padding: 10px;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KittyFight</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <button class="btn" id="connect-button">Connect</button>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1>KittyFight</h1>
+          <hr/>
+        </div>
+      </div>
+    </div>
+
+    <div id="fighters">
+      <div class="col-sm-6 col-md-6 col-lg-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Challenger</h3>
+          </div>
+          <div class="panel-body">
+            <div>
+              <label>ID</label>
+              <input type="number" id="challenger-id" />
+              <button class="btn btn-default btn-load" type="button" id="challenger-load" data-kitty="challenger" data-valid="false">
+                Load
+              </button>
+            </div>
+            <div>
+              <h3 id="challenger-name"></h3>
+              <img alt="Kitty" class="img-kitty" src="images/kitty-eth.svg">
+              <p id="challenger-stats"></p>
+              <p id="challenger-gestating" class="gestating">A gestating kitty can't fight.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-6 col-lg-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Opponent</h3>
+          </div>
+          <div class="panel-body">
+            <div>
+              <label>ID</label>
+              <input type="number" id="opponent-id" />
+              <button class="btn btn-default btn-load" type="button" id="opponent-load" data-kitty="opponent" data-valid="false">
+                Load
+              </button>
+            </div>
+            <div>
+              <h3 id="opponent-name"></h3>
+              <img alt="Kitty" class="img-kitty" src="images/kitty-eth.svg">
+              <p id="opponent-stats"></p>
+              <p id="opponent-gestating" class="gestating">A gestating kitty can't fight.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="show-event">
+      <span id="showmessage-text"></span>
+    </div>
+
+    <div class="modal fade" id="kight-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title"></h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="fight-round-number"></p>
+            <p class="fight-round-result"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <button class="btn btn-success" type="button" id="fight" disabled>Fight</button>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

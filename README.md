@@ -6,7 +6,9 @@ The KittyFight contract interact with the CryptoKitties core contract to get the
 
 The fight result is generated from the kitties genes and some pseudo randomness. 
 
+![UI Screenshoot](https://github.com/damianmarti/kitty-fight/blob/main/docs/images/kitty-fight.png)
 
+![UI Screenshoot](https://github.com/damianmarti/kitty-fight/blob/main/docs/images/kitty-fight2.png)
 
 ## Install libraries:
 
